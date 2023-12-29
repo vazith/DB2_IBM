@@ -33,19 +33,84 @@ _________DB2 INSTAlLATION_____________
              V
  after that run this same command in same directory
      ./db2_install
+           |
+           V
+       cd server
+      ./db2setup
 
 
+-------------(gui opens)-----------------
 
+in gui there is a installation product is there
+press on it 
+              |
+              V
+press on install new ( which is in first )
+              |
+              V
+_______anotheir gui open________ 
 
+gui : ( name :db2 Setup -server edition )
 
+1. introduction ( click next )
+2. software license agrement ( acept license)
+         next
 
+3. installation type
+  ( typical 1100 - 1330 MB
+    compact 1020 - 1230 MB
+    custom  1020 - 1250 MB )
+    select (typical )
+        next
 
+4. installation action
+select : install Db2 server edition on this computer computer and save my setting 
+     in a response file 
+response file : /root/db2Server.rsp
+         next
 
+ 5. installation Directory 
+   directry :/opt/ibm/db2/V10.5_01
+         next
 
+6. Dsa user
+new user
+username : dasusr1
+uid : n/a
+groupnme : dasadm1
+gid : n/a
+password : sarasu10
+comform password : sarasu10
+home directory :/home/dasur1
+existing user 
+( by using this we can existing user)
 
+7. instance setup
+create a db2instance
+do not create a db2 instance 
+( select : create a db2instance )
+8. partition options 
+single partitions'
+multiple partitons
+(select: single partitions)
+    next
+8. instance -oweing user
+new user
+username : dasusr1
+uid : n/a
+groupnme : dasadm1
+gid : n/a
+password : sarasu10
+comform password : sarasu10
+home directory :/home/dasur1
+existing user 
+( by using this we can existing user)
+      next
 
-  
-  
+9. summary 
+     |
+     v
+click (finsh)  
 
 
 
